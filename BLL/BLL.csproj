@@ -44,13 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionsProccessing.cs" />
     <Compile Include="InstagramWorker\IInstagramWorker.cs" />
     <Compile Include="InstagramWorker\InstagramWorker.cs" />
     <Compile Include="LoginInfo.cs" />
+    <Compile Include="ProccessingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonC\CommonC.csproj">
+      <Project>{7031B5C7-D415-44D6-B155-A9F58A795FC0}</Project>
+      <Name>CommonC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{0770AE5A-012A-446C-A9B1-BAB40F54EA15}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

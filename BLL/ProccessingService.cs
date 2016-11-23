@@ -40,7 +40,7 @@ namespace BLL
 
         private List<User> GenerateStabUsers()
         {
-            return  new List<User>
+            return new List<User>
             {
                 new User
                 {

@@ -5,3 +5,7 @@ c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.dll
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\CommonC.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\DataAccessLayer.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\CommonC.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\DataAccessLayer.pdb

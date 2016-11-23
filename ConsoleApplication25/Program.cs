@@ -1,4 +1,4 @@
-﻿using BLL.InstagramWorker;
+﻿using BLL;
 using RestSharp;
 using System;
 using System.Collections.Generic;
