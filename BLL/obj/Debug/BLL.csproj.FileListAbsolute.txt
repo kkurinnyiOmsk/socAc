@@ -1,0 +1,7 @@
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\BLL.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\BLL.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\RestSharp.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\RestSharp.xml
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\BLL\obj\Debug\BLL.pdb
