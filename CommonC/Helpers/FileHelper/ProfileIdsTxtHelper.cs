@@ -18,5 +18,17 @@ namespace Common.Helpers.FileHelper
 
             return result;
         }
+
+        public static Dictionary<string, string> GetLoginInfoFromSource(string path)
+        {
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            foreach (string line in File.ReadLines(path))
+            {
+                var loginPasswordMass = line.Split(new char[] { ' ' });
+                result.Add(loginPasswordMass[0], loginPasswordMass[1]);
+            }
+
+            return result;
+        }
     }
 }

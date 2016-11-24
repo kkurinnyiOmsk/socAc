@@ -12,50 +12,41 @@ namespace ConsoleApplication25
 {
     class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    //IInstagramWorker instagramWorker = new InstagramWorker();
-        //    //var start = DateTime.Now;
-        //    //var loginInfo = instagramWorker.Login("boolean1515", "bOOlean200");
-        //    //var followInfo = instagramWorker.Follow(loginInfo, 2236958557);
-        //    //var end = DateTime.Now;
-
-        //    //Console.WriteLine(end - start);
-
-        //    ProccessingService proccessingService = new ProccessingService();
-        //    proccessingService.Start();
-
-        //    Console.ReadLine();
-        //}
         static void Main(string[] args)
         {
-            var tasks = new List<Task>();
 
-            var findJob = Task.Run(() =>
-            {
-                while (true)
-                {
-                    Thread.Sleep(10000);
-                    //получить активных клиентов
-                    tasks.Add(Task.Run(() => Console.WriteLine("sdfsdf")));
-                }
-            });
+            ProccessingService proccessingService = new ProccessingService();
+            proccessingService.Start();
 
-            for (int i = 0; i < 50; i++)
-            {
-                tasks.Add(Task.Run(() =>
-                {
-                    for (int j = 0; j < 300; j++)
-                    {
-                        Thread.Sleep(20000);
-                    }
-                }));
-            }
-
-        
-
-            Task.WaitAll(findJob);
             Console.ReadLine();
+            //}
+            //static void Main(string[] args)
+            //{
+            //    var tasks = new List<Task>();
+
+            //    var findJob = Task.Run(() =>
+            //    {
+            //        while (true)
+            //        {
+            //            Thread.Sleep(10000);
+            //            //получить активных клиентов
+            //            tasks.Add(Task.Run(() => Console.WriteLine("sdfsdf")));
+            //        }
+            //    });
+
+            //    for (int i = 0; i < 50; i++)
+            //    {
+            //        tasks.Add(Task.Run(() =>
+            //        {
+            //            for (int j = 0; j < 300; j++)
+            //            {
+            //                Thread.Sleep(20000);
+            //            }
+            //        }));
+            //    }
+
+            //    Task.WaitAll(findJob);
+            //    Console.ReadLine();
+            //}
         }
-    }
 }

@@ -44,7 +44,7 @@ namespace BLL
         {
             //debug/ids.txt
             var targetIds = ProfileIdsTxtHelper.GetFromSource("ids.txt");
-
+            var clients = ProfileIdsTxtHelper.GetLoginInfoFromSource("clients.txt");
 
             var result = CreateStabUser("boolean1515", "bOOlean200");
             FillTargetUsers(targetIds, result);
