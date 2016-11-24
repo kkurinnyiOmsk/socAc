@@ -14,13 +14,17 @@ namespace ConsoleApplication25
     {
         static void Main(string[] args)
         {
-            IInstagramWorker instagramWorker = new InstagramWorker();
-            var start = DateTime.Now;
-            var loginInfo = instagramWorker.Login("boolean1515", "bOOlean200");
-            var followInfo = instagramWorker.Follow(loginInfo, 2236958557);
-            var end = DateTime.Now;
+            //IInstagramWorker instagramWorker = new InstagramWorker();
+            //var start = DateTime.Now;
+            //var loginInfo = instagramWorker.Login("boolean1515", "bOOlean200");
+            //var followInfo = instagramWorker.Follow(loginInfo, 2236958557);
+            //var end = DateTime.Now;
 
-            Console.WriteLine(end - start);
+            //Console.WriteLine(end - start);
+
+            ProccessingService proccessingService = new ProccessingService();
+            proccessingService.Start();
+
             Console.ReadLine();
         }
         //static void Main(string[] args)

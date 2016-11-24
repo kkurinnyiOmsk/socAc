@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace Common.Helpers.FileHelper
 {
-    interface IProfileIdsHelper
+    public interface IProfileIdsHelper
     {
-        IEnumerable<long> GetFromSource(string path);
     }
 }

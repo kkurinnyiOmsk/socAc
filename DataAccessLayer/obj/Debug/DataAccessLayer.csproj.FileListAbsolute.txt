@@ -1,0 +1,7 @@
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\CommonC.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\CommonC.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

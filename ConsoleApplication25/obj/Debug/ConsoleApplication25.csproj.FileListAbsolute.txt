@@ -12,3 +12,5 @@ c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\Con
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\CommonC.pdb
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\BLL.dll
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\BLL.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.dll
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.pdb

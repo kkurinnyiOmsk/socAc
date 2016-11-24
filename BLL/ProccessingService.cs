@@ -1,4 +1,5 @@
 ﻿using Common;
+using Common.Helpers.FileHelper;
 using DataAccessLayer.Models;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace BLL
         public void Start()
         {
             var actionTasks = new List<Task>();
-            List<User> usersForProccessing = new List<User>();
+            List<User> usersForProccessing = GenerateStabUsers();
 
             foreach (var user in usersForProccessing)
             {
@@ -38,15 +39,57 @@ namespace BLL
             Task.WaitAll(findJob);
         }
 
+        //метод расширения
         private List<User> GenerateStabUsers()
+        {
+            //debug/ids.txt
+            var targetIds = ProfileIdsTxtHelper.GetFromSource("ids.txt");
+
+
+            var result = CreateStabUser("boolean1515", "bOOlean200");
+            FillTargetUsers(targetIds, result);
+
+            return result;
+        }
+
+        private static void FillTargetUsers(IEnumerable<long> targetIds, List<User> result)
+        {
+            foreach (var user in result)
+            {
+                user.Actions = new List<TaskAction>
+                {
+                     new TaskAction
+                        {
+                            Id = 1,
+                            IsActive = true,
+                            TaskType = TaskType.Follow,
+                            UserId = 1
+                     }
+                };
+                int i = 0;
+                user.Actions.ToList()[0].TargetUsers = new List<UsersForSpecificAction>();
+
+                foreach (var targetId in targetIds)
+                {
+                    user.Actions.ToList()[0].TargetUsers.Add(
+                        new UsersForSpecificAction
+                        {
+                            Id = i++,
+                            TargerUserId = targetId
+                        });
+                }
+            }
+        }
+
+        private static List<User> CreateStabUser(string login, string password)
         {
             return new List<User>
             {
                 new User
                 {
                     Id = 1,
-                    Login = "boolean1515",
-                    Password = "bOOlean200",
+                    Login = login,
+                    Password = password,
                     IsActive = true,
                     IsInProccessing = false,
                     Actions = new List<TaskAction>

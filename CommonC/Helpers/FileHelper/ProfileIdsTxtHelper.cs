@@ -8,7 +8,7 @@ namespace Common.Helpers.FileHelper
 {
     public class ProfileIdsTxtHelper : IProfileIdsHelper
     {
-        public IEnumerable<long> GetFromSource(string path)
+        public static IEnumerable<long> GetFromSource(string path)
         {
             List<long> result = new List<long>();
             foreach (string line in File.ReadLines(path))
