@@ -26,74 +26,77 @@ namespace BLL
                 }));
             }
 
-            var findJob = Task.Run(() =>
-            {
-                while (true)
-                {
-                    //получить активных клиентов
-                    Thread.Sleep(1000 * 60 * 5);
-                    actionTasks.Add(Task.Run(() => Console.WriteLine("новая задача")));
-                }
-            });
+            //var findJob = Task.Run(() =>
+            //{
+            //    while (true)
+            //    {
+            //        //получить активных клиентов
+            //        Thread.Sleep(1000 * 60 * 5);
+            //        actionTasks.Add(Task.Run(() => Console.WriteLine("новая задача")));
+            //    }
+            //});
 
-            Task.WaitAll(findJob);
+            //Task.WaitAll(findJob);
+            Task.WaitAll(actionTasks.ToArray());
         }
 
         //метод расширения
         private List<User> GenerateStabUsers()
         {
             //debug/ids.txt
+            var result = new List<User>();
             var targetIds = ProfileIdsTxtHelper.GetFromSource("ids.txt");
             var clients = ProfileIdsTxtHelper.GetLoginInfoFromSource("clients.txt");
 
-            var result = CreateStabUser("boolean1515", "bOOlean200");
-            FillTargetUsers(targetIds, result);
+            foreach (var stubClient in clients)
+            {
+                var client = CreateStabUser(stubClient.Key, stubClient.Value);
+                FillTargetUsers(targetIds, client);
+                result.Add(client);
+            }
+
 
             return result;
         }
 
-        private static void FillTargetUsers(IEnumerable<long> targetIds, List<User> result)
+        private static void FillTargetUsers(IEnumerable<long> targetIds, User user)
         {
-            foreach (var user in result)
-            {
-                user.Actions = new List<TaskAction>
+            user.Actions = new List<TaskAction>
                 {
                      new TaskAction
                         {
                             Id = 1,
-                            IsActive = true,
+                            IsActive = true, //иначе не стартанёт джоба
                             TaskType = TaskType.Follow,
                             UserId = 1
                      }
                 };
-                int i = 0;
-                user.Actions.ToList()[0].TargetUsers = new List<UsersForSpecificAction>();
+            int i = 0;
+            user.Actions.ToList()[0].TargetUsers = new List<UsersForSpecificAction>();
 
-                foreach (var targetId in targetIds)
-                {
-                    user.Actions.ToList()[0].TargetUsers.Add(
-                        new UsersForSpecificAction
-                        {
-                            Id = i++,
-                            TargerUserId = targetId
-                        });
-                }
+            foreach (var targetId in targetIds)
+            {
+                user.Actions.ToList()[0].TargetUsers.Add(
+                    new UsersForSpecificAction
+                    {
+                        Id = i++,
+                        TargerUserId = targetId
+                    });
             }
         }
 
-        private static List<User> CreateStabUser(string login, string password)
+        private static User CreateStabUser(string login, string password)
         {
-            return new List<User>
-            {
-                new User
-                {
-                    Id = 1,
-                    Login = login,
-                    Password = password,
-                    IsActive = true,
-                    IsInProccessing = false,
-                    Actions = new List<TaskAction>
-                    {
+            return
+                 new User
+                 {
+                     Id = 1,
+                     Login = login,
+                     Password = password,
+                     IsActive = true,
+                     IsInProccessing = false,
+                     Actions = new List<TaskAction>
+                     {
                         new TaskAction
                         {
                             Id = 1,
@@ -114,9 +117,8 @@ namespace BLL
                                }
                             }
                         }
-                    }
-                }
-            };
+                     }
+                 };
         }
     }
 }

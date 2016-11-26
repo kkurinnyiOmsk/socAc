@@ -32,7 +32,12 @@ namespace BLL
 
             while (currenActionCount < expectedActionCount)
             {
-                instagramWorker.Follow(loginInfo, targetUsersId.Dequeue());
+                var followResult = instagramWorker.Follow(loginInfo, targetUsersId.Dequeue());
+                if(followResult == false)
+                {
+                    //todo отправка письма о завершении подписки с ошибкой с информацией об ошибке
+                    break;
+                }
                 currenActionCount++;
                 var rand = new Random();
                 var randomSleep = rand.Next(30000, 40000);

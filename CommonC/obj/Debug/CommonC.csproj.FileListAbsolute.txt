@@ -2,3 +2,4 @@ c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\Com
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\CommonC\bin\Debug\CommonC.pdb
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\CommonC\obj\Debug\CommonC.dll
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\CommonC\obj\Debug\CommonC.pdb
+c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\CommonC\obj\Debug\CommonC.csprojResolveAssemblyReference.cache

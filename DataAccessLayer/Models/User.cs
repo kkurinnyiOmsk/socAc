@@ -13,6 +13,9 @@ namespace DataAccessLayer.Models
         public string Password { get; set; }
         public bool IsActive { get; set; }
         public bool IsInProccessing { get; set; }
+        public string InstagramLogin  { get; set; }
+        public string InstagramPassword { get; set; }
+
         public ICollection<TaskAction> Actions { get; set; }
     }
 }

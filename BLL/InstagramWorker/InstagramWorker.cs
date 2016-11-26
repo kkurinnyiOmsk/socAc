@@ -23,6 +23,10 @@ namespace BLL
             client.UserAgent = USER_AGENT;
 
 
+            //var proxy = new WebProxy("адрес прокси");
+            //proxy.Credentials = new NetworkCredential("логин", "пароль");
+            //client.Proxy = proxy;
+
         }
 
         public bool Follow(LoginInfo loginInfo, long targetUser)
@@ -59,8 +63,8 @@ namespace BLL
             loginRequest.AddHeader("X-Requested-With", "XMLHttpRequest");
             loginRequest.AddHeader("X-Instagram-AJAX", "1");
             loginRequest.AddHeader("Referer", client.BaseUrl.ToString());
-            loginRequest.AddParameter("username", "boolean1515");
-            loginRequest.AddParameter("password", "bOOlean200");
+            loginRequest.AddParameter("username", login);
+            loginRequest.AddParameter("password", password);
 
             var loginResponse = client.Execute(loginRequest);
 
