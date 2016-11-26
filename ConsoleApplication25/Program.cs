@@ -1,12 +1,6 @@
 ﻿using BLL;
-using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace ConsoleApplication25
 {
@@ -15,8 +9,12 @@ namespace ConsoleApplication25
         static void Main(string[] args)
         {
 
-            ProccessingService proccessingService = new ProccessingService();
-            proccessingService.Start();
+            //ProccessingService proccessingService = new ProccessingService();
+            //proccessingService.Start();
+
+            string SmtpServerLogin = ConfigurationManager.AppSettings["SmtpServerLogin"];
+            string SmtpServerPassword = ConfigurationManager.AppSettings["SmtpServerPassword"];
+
 
             Console.ReadLine();
             //}
