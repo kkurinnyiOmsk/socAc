@@ -17,7 +17,7 @@ namespace BLL
 
         public InstagramWorker()
         {
-            var proxy = GetFreeProxy();
+            var proxyAddress = GetFreeProxy();
             USER_AGENT =
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) " +
             "AppleWebKit/537.36 (KHTML, like Gecko) " +
@@ -27,18 +27,24 @@ namespace BLL
             client.CookieContainer = new CookieContainer();
             client.UserAgent = USER_AGENT;
 
-            //var proxy = new WebProxy("адрес прокси");
+            var proxy = new WebProxy(proxyAddress);
             //proxy.Credentials = new NetworkCredential("логин", "пароль");
-            //client.Proxy = proxy;
+            client.Proxy = proxy;
 
         }
-        private Tuple<string, string> GetFreeProxy()
+        private string GetFreeProxy()
         {
+            //todo try while anonymityLevel == 1
             var proxyClient = new RestClient("http://gimmeproxy.com/");
-            var proxyReq = new RestRequest(string.Format("/api/getProxy/"), Method.GET);
-            var proxyResponse = proxyClient.Execute(proxyReq);
-            dynamic data = JsonConvert.DeserializeObject(proxyResponse.Content);
-            return new Tuple<string, string>(data.ip.ToString(), data.port.ToString());
+            dynamic data;
+            do
+            {
+                var proxyReq = new RestRequest(string.Format("/api/getProxy/"), Method.GET);
+                var proxyResponse = proxyClient.Execute(proxyReq);
+                data = JsonConvert.DeserializeObject(proxyResponse.Content);
+            } while (data.anonymityLevel.ToString() != "1" && data.cookies.ToString() != "true");
+
+            return data.ipPort.ToString();
         }
         public bool Follow(LoginInfo loginInfo, long targetUser)
         {
