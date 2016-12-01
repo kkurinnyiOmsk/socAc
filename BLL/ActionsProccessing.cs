@@ -28,7 +28,7 @@ namespace BLL
             var loginInfo = instagramWorker.Login(user.Login, user.Password);
             if(!loginInfo.IsSuccess)
             {
-                Logger.Warn("login failed for user {0} {1} because {2}", user.Id, user.Login, loginInfo.ErrorMessage);
+                Logger.Error("login failed for user with id: {0} because {1}", user.Id, loginInfo.ErrorMessage);
                 //todo send email for admin
                 return;
             }
@@ -41,6 +41,7 @@ namespace BLL
                 if(followResult == false)
                 {
                     //todo send email for admin
+                    Logger.Error("following failed for user with id: {0}", user.Id);
                     break;
                 }
                 currenActionCount++;
@@ -48,6 +49,8 @@ namespace BLL
                 var randomSleep = rand.Next(30000, 40000); //todo need exact time
                 Thread.Sleep(randomSleep);
             }
+            //task successfully ended for user
+            Logger.Info("task successfully ended for user with id: {0}", user.Id);
         }
     }
 }

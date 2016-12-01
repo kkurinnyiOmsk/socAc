@@ -19,12 +19,13 @@ namespace BLL
         {
             Logger.Info("Start proccessing");
             var actionTasks = new List<Task>();
-            List<User> usersForProccessing = GenerateStabUsers();
+            var usersForProccessing = GenerateStabUsers();
 
             foreach (var user in usersForProccessing)
             {
                 actionTasks.Add(Task.Run(() =>
                 {
+                    Logger.Info("Start proccessing job for user with id: {0}", user.Id);
                     var actionsProccessing = new ActionsProccessing(new InstagramWorker(), user, 1000);
                     actionsProccessing.Proccessing();
                 }));
