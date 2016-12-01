@@ -49,7 +49,6 @@ namespace BLL
         private List<User> GenerateStabUsers()
         {
             Logger.Debug("Get stub users");
-            //debug/ids.txt
             var result = new List<User>();
             var targetIds = ProfileIdsTxtHelper.GetFromSource("ids.txt");
             var clients = ProfileIdsTxtHelper.GetLoginInfoFromSource("clients.txt");

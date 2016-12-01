@@ -71,11 +71,11 @@ namespace BLL
 
             var loginResponse = client.Execute(loginRequest);
 
-
             return new LoginInfo
             {
                 IsSuccess = loginResponse.StatusCode == HttpStatusCode.OK ? true : false, 
-                ReturnedCookies = loginResponse.Cookies
+                ReturnedCookies = loginResponse.Cookies,
+                ErrorMessage = loginResponse.ErrorMessage
             };
         }
     }

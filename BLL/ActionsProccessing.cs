@@ -1,12 +1,9 @@
 ﻿using DataAccessLayer.Models;
 using NLog;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace BLL
 {
@@ -31,24 +28,24 @@ namespace BLL
             var loginInfo = instagramWorker.Login(user.Login, user.Password);
             if(!loginInfo.IsSuccess)
             {
-                Logger.Warn("login failed for user {0}", user.Id);
+                Logger.Warn("login failed for user {0} {1} because {2}", user.Id, user.Login, loginInfo.ErrorMessage);
                 //todo send email for admin
                 return;
             }
             var targetUsers = user.Actions.FirstOrDefault(action => action.IsActive).TargetUsers;
-            Queue<long> targetUsersId = new Queue<long>(targetUsers.Select(user => user.TargerUserId));
+            var targetUsersId = new Queue<long>(targetUsers.Select(user => user.TargerUserId));
 
             while (currenActionCount < expectedActionCount)
             {
                 var followResult = instagramWorker.Follow(loginInfo, targetUsersId.Dequeue());
                 if(followResult == false)
                 {
-                    //todo отправка письма о завершении подписки с ошибкой с информацией об ошибке
+                    //todo send email for admin
                     break;
                 }
                 currenActionCount++;
                 var rand = new Random();
-                var randomSleep = rand.Next(30000, 40000);
+                var randomSleep = rand.Next(30000, 40000); //todo need exact time
                 Thread.Sleep(randomSleep);
             }
         }
