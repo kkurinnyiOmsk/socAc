@@ -5,3 +5,8 @@ c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\Dat
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
