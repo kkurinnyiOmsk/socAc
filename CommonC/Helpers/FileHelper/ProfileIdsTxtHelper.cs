@@ -16,7 +16,7 @@ namespace Common.Helpers.FileHelper
                 result.Add(long.Parse(line));
             }
 
-            return result;
+                return result;
         }
 
         public static Dictionary<string, string> GetLoginInfoFromSource(string path)
