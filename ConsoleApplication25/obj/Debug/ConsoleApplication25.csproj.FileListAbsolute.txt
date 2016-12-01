@@ -14,3 +14,6 @@ c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\Con
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\BLL.pdb
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.dll
 c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.pdb
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.config
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.dll
+C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.xml

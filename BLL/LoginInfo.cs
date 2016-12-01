@@ -9,7 +9,6 @@ namespace BLL
     public class LoginInfo
     {
         public bool IsSuccess { get; set; }
-
         /// <summary>
         /// csrftoken и т.д.
         /// </summary>

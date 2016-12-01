@@ -1,6 +1,7 @@
 ﻿using Common;
 using Common.Helpers.FileHelper;
 using DataAccessLayer.Models;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,11 @@ namespace BLL
 {
     public class ProccessingService
     {
+        private static NLog.Logger Logger = LogManager.GetCurrentClassLogger();
+
         public void Start()
         {
+            Logger.Info("Start proccessing");
             var actionTasks = new List<Task>();
             List<User> usersForProccessing = GenerateStabUsers();
 
@@ -32,6 +36,7 @@ namespace BLL
             //    {
             //        //получить активных клиентов
             //        Thread.Sleep(1000 * 60 * 5);
+            //        Logger.Info("Add new user task");
             //        actionTasks.Add(Task.Run(() => Console.WriteLine("новая задача")));
             //    }
             //});
@@ -43,6 +48,7 @@ namespace BLL
         //метод расширения
         private List<User> GenerateStabUsers()
         {
+            Logger.Debug("Get stub users");
             //debug/ids.txt
             var result = new List<User>();
             var targetIds = ProfileIdsTxtHelper.GetFromSource("ids.txt");

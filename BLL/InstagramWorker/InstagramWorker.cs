@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using NLog;
+using RestSharp;
 using System;
 using System.Linq;
 using System.Net;
@@ -7,6 +8,8 @@ namespace BLL
 {
     public class InstagramWorker : IInstagramWorker
     {
+        private static NLog.Logger Logger = LogManager.GetCurrentClassLogger();
+
         private string USER_AGENT;
 
         private RestClient client;

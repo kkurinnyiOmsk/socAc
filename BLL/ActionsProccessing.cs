@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Models;
+using NLog;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace BLL
 {
     public class ActionsProccessing
     {
+        private static NLog.Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IInstagramWorker instagramWorker;
         private User user;
         private long currenActionCount;
@@ -27,6 +29,12 @@ namespace BLL
         public void Proccessing()
         {
             var loginInfo = instagramWorker.Login(user.Login, user.Password);
+            if(!loginInfo.IsSuccess)
+            {
+                Logger.Warn("login failed for user {0}", user.Id);
+                //todo send email for admin
+                return;
+            }
             var targetUsers = user.Actions.FirstOrDefault(action => action.IsActive).TargetUsers;
             Queue<long> targetUsersId = new Queue<long>(targetUsers.Select(user => user.TargerUserId));
 

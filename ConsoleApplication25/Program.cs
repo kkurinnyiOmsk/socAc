@@ -6,15 +6,12 @@ namespace ConsoleApplication25
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
-            //ProccessingService proccessingService = new ProccessingService();
-            //proccessingService.Start();
-
-            string SmtpServerLogin = ConfigurationManager.AppSettings["SmtpServerLogin"];
-            string SmtpServerPassword = ConfigurationManager.AppSettings["SmtpServerPassword"];
-
+            ProccessingService proccessingService = new ProccessingService();
+            proccessingService.Start();
 
             Console.ReadLine();
             //}
