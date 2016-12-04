@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Models;
+﻿using CommonC.Helpers;
+using DataAccessLayer.Models;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace BLL
 {
     public class ActionsProccessing
     {
+        private MailHelper mailHelper;
         private static NLog.Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IInstagramWorker instagramWorker;
         private User user;
@@ -17,6 +19,7 @@ namespace BLL
 
         public ActionsProccessing(IInstagramWorker instagramWorker, User user, long expectedActionCount)
         {
+            this.mailHelper = new MailHelper();
             this.instagramWorker = instagramWorker;
             this.user = user;
             this.expectedActionCount = expectedActionCount;
@@ -28,8 +31,10 @@ namespace BLL
             var loginInfo = instagramWorker.Login(user.Login, user.Password);
             if(!loginInfo.IsSuccess)
             {
-                Logger.Error("login failed for user with id: {0} because {1}", user.Id, loginInfo.ErrorMessage);
-                //todo send email for admin
+                var errorMessage = string.Format("login failed for user with id: {0} because {1}", user.Id, loginInfo.ErrorMessage);
+
+                Logger.Error(errorMessage);
+                mailHelper.SendMail(errorMessage);
                 return;
             }
             var targetUsers = user.Actions.FirstOrDefault(action => action.IsActive).TargetUsers;

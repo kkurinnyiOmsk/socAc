@@ -6,3 +6,4 @@ C:\Users\Андрей\socAc\CommonC\bin\Debug\CommonC.dll
 C:\Users\Андрей\socAc\CommonC\bin\Debug\CommonC.pdb
 C:\Users\Андрей\socAc\CommonC\obj\Debug\CommonC.dll
 C:\Users\Андрей\socAc\CommonC\obj\Debug\CommonC.pdb
+C:\Users\Андрей\socAc\CommonC\obj\Debug\CommonC.csprojResolveAssemblyReference.cache

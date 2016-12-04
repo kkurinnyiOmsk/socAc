@@ -1,4 +1,5 @@
 ﻿using BLL;
+using CommonC.Helpers;
 using System;
 using System.Configuration;
 
@@ -8,6 +9,9 @@ namespace ConsoleApplication25
     {
         static void Main(string[] args)
         {
+            //MailHelper mh = new MailHelper();
+            //mh.SendMail("WARNING");
+
 
             ProccessingService proccessingService = new ProccessingService();
             proccessingService.Start();

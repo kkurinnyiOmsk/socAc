@@ -27,7 +27,7 @@ namespace BLL
             client.CookieContainer = new CookieContainer();
             client.UserAgent = USER_AGENT;
 
-            var proxy = new WebProxy(proxyAddress);
+            var proxy = new WebProxy("119.26.115.72:1409");
             //proxy.Credentials = new NetworkCredential("логин", "пароль");
             client.Proxy = proxy;
 
