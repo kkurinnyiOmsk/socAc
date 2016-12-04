@@ -10,3 +10,15 @@ C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\Dat
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.xml
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\CommonC.dll
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\CommonC.pdb
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Андрей\socAc\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Андрей\socAc\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\socAc\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Андрей\socAc\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

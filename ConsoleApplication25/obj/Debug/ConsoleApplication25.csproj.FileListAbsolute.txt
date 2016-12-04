@@ -1,19 +1,16 @@
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\ConsoleApplication25.exe.config
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\obj\Debug\ConsoleApplication25.csprojResolveAssemblyReference.cache
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\ConsoleApplication25.exe
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\ConsoleApplication25.pdb
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\Newtonsoft.Json.dll
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\Newtonsoft.Json.xml
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\obj\Debug\ConsoleApplication25.exe
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\obj\Debug\ConsoleApplication25.pdb
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\RestSharp.dll
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\RestSharp.xml
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\CommonC.dll
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\CommonC.pdb
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\BLL.dll
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\BLL.pdb
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.dll
-c:\users\kkurinny\documents\visual studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\DataAccessLayer.pdb
-C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.config
-C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.dll
-C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\ConsoleApplication25\bin\Debug\NLog.xml
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\NLog.config
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\ConsoleApplication25.exe.config
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\ConsoleApplication25.exe
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\ConsoleApplication25.pdb
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\BLL.dll
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\CommonC.dll
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\NLog.dll
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\DataAccessLayer.dll
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\BLL.pdb
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\CommonC.pdb
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\NLog.xml
+C:\Users\Андрей\socAc\ConsoleApplication25\bin\Debug\DataAccessLayer.pdb
+C:\Users\Андрей\socAc\ConsoleApplication25\obj\Debug\ConsoleApplication25.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\socAc\ConsoleApplication25\obj\Debug\ConsoleApplication25.csproj.ConsoleApplication25.exe.config
+C:\Users\Андрей\socAc\ConsoleApplication25\obj\Debug\ConsoleApplication25.exe
+C:\Users\Андрей\socAc\ConsoleApplication25\obj\Debug\ConsoleApplication25.pdb

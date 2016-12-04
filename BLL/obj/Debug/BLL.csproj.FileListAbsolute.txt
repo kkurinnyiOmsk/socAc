@@ -13,3 +13,18 @@ C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\BLL
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\NLog.xml
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kkurinny\Documents\Visual Studio 2015\Projects\ConsoleApplication25\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Андрей\socAc\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\socAc\BLL\obj\Debug\BLL.dll
+C:\Users\Андрей\socAc\BLL\obj\Debug\BLL.pdb
+C:\Users\Андрей\socAc\BLL\bin\Debug\BLL.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\BLL.pdb
+C:\Users\Андрей\socAc\BLL\bin\Debug\CommonC.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\DataAccessLayer.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\NLog.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\RestSharp.dll
+C:\Users\Андрей\socAc\BLL\bin\Debug\CommonC.pdb
+C:\Users\Андрей\socAc\BLL\bin\Debug\DataAccessLayer.pdb
+C:\Users\Андрей\socAc\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Андрей\socAc\BLL\bin\Debug\NLog.xml
+C:\Users\Андрей\socAc\BLL\bin\Debug\RestSharp.xml
