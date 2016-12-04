@@ -42,7 +42,7 @@ namespace BLL
                 var proxyReq = new RestRequest(string.Format("/api/getProxy/"), Method.GET);
                 var proxyResponse = proxyClient.Execute(proxyReq);
                 data = JsonConvert.DeserializeObject(proxyResponse.Content);
-            } while (data.anonymityLevel.ToString() != "1" && data.cookies.ToString() != "true");
+            } while (data.anonymityLevel.ToString() != "0" && data.cookies.ToString() != "true");
 
             return data.ipPort.ToString();
         }
